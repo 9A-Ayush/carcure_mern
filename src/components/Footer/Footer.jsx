@@ -234,7 +234,7 @@ const Footer = ({ onRateClick, onCartClick, onAuthClick, onLogout, isLoggedIn })
           <div className="footer-bottom-links"></div>
            <p>                                                                                                              
               <a                                                                                                        
-                href="https://www.instagram.com/velocityvibes_72?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/ayush_ix_xi/?hl=en"
                 target="_blank"                                                                                                        
                 rel="noopener noreferrer"                                                                                        
                 className="footer-link"
