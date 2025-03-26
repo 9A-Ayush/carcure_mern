@@ -216,26 +216,36 @@ const Footer = ({ onRateClick, onCartClick, onAuthClick, onLogout, isLoggedIn })
             </p>
             <p>
               <FaEnvelope /> <span>info@carcare.com</span>
-            </p>
-            <p>
+            </p>          
+            <p>          
               <FaMapMarkerAlt /> <span>CYBER THANA, Gopalganj, Bihar</span>
-            </p>
-            <p>
+            </p>          
+            <p>          
               <FaClock /> <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
-            </p>
-          </div>
-        </div>
-      </div>
+            </p>          
+            <p>                
+              <a          
+                href="https://www.instagram.com/velocityvibes_72?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"          
+                rel="noopener noreferrer"          
+                className="footer-link"
+              >
+                dev.ayush
+              </a>          
+            </p>          
+          </div>          
+        </div>          
+      </div>          
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p>&copy; {new Date().getFullYear()} Car Care. All rights reserved.</p>
           <div className="footer-bottom-links"></div>
-        </div>
-      </div>
+        </div>          
+      </div>          
     </footer>
-  );
-};
+  );          
+};          
 
 export default Footer;
