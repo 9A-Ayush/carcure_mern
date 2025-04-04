@@ -1,0 +1,254 @@
+.my-account-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.account-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.account-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.account-content {
+  display: flex;
+  gap: 2rem;
+  min-height: 600px;
+}
+
+.account-sidebar {
+  flex: 0 0 250px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.user-info {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar svg {
+  font-size: 2.5rem;
+  color: #ff0000;
+}
+
+.user-info h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.user-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.sidebar-menu {
+  padding: 1rem 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item svg {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.sidebar-item:hover {
+  background-color: #f8f9fa;
+  color: #ff0000;
+}
+
+.sidebar-item.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+.sidebar-item.logout {
+  margin-top: 1rem;
+  color: #dc3545;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.sidebar-item.logout:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.account-main {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.profile-section,
+.appointments-section,
+.vehicles-section,
+.history-section,
+.ratings-section {
+  height: 100%;
+}
+
+.section-description {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  margin: 2rem 0;
+}
+
+.info-group {
+  margin-bottom: 1.5rem;
+}
+
+.info-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.info-group p {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  color: #333;
+}
+
+.profile-actions,
+.appointments-actions,
+.vehicles-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: #cc0000;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.secondary-button:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .account-content {
+    flex-direction: column;
+  }
+  
+  .account-sidebar {
+    flex: none;
+    width: 100%;
+  }
+  
+  .user-info {
+    padding: 1rem;
+  }
+  
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .account-main {
+    padding: 1.5rem;
+  }
+  
+  .profile-actions,
+  .appointments-actions,
+  .vehicles-actions {
+    flex-direction: column;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}
